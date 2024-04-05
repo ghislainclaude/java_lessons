@@ -9,14 +9,19 @@ public class ArrayListTest {
         list.add("apple");
         list.add("pine-apple");
 
-        addinglists: {list.addAll(veglist);}
-
         veglist.add("tomato");
         veglist.add("cucumber");
-        veglist.add(    "potato");
+        veglist.add( "potato");
 
-        addinglists;
+        {list.addAll(veglist);}
         
-        System.out.println(list);
+        Iterator<String> iterator = list.iterator();
+        //System.out.println(list.containsAll(veglist));
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next() + ", ");
+        }
+
+        Object[] array  = list.toArray();
+        System.out.println(Arrays.toString(array));
     }
 }

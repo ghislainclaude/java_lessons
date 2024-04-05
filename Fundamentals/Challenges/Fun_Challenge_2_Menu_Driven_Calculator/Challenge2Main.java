@@ -10,7 +10,7 @@ public class Challenge2Main {
 		boolean isOperatorValid = false;
 		boolean isOptionOperation = false;
 		String operation = null;
-		String operators = null;
+		String operators = null; 
 
 		// Main loop that keeps running as long as the user wants to continue
 		while(isContinue) 
@@ -68,13 +68,13 @@ public class Challenge2Main {
 					break;
 					case 4:
 						if (ndOperand == 0) {
-							System.out.println("Can not divide by zero");
+							System.out.println("Error !! Can't divide by zero");
 						}else 
 						System.out.println("Final answer: "+Division.divide(stOperand, ndOperand));
 					break;
 					case 5:
 						if (ndOperand == 0) {
-							System.out.println("Can not divide by zero");
+							System.out.println("Error Can't divide by zero");
 						}else 
 						System.out.println("Final answer: "+Modulus.modulus(stOperand, ndOperand));
 					break;

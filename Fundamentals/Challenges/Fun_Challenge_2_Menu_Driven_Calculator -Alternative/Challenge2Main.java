@@ -22,7 +22,7 @@ public class Challenge2Main {
 			operation = Prompter.prompt("Please Enter one of the options 1 to 6  to perform one of the operation above:  ");
 			isOptionValid = MenuValidator.validate(operation);
 			while (!isOptionValid) {
-				operation = Prompter.prompt("Error !! PLease enter one of the option sign 1 to 6 to perform one on the operation above:  ");
+				operation = Prompter.prompt("Error !! PLease enter one of the option 1 to 6 to perform one on the operation above:  ");
 					isOptionValid = MenuValidator.validate(operation);
 				/*if (!isOptionValid) {
 				}*/
@@ -63,7 +63,7 @@ public class Challenge2Main {
 				System.out.println("Final answer: "+Multiplication.mutiply(stOperand, ndOperand));
 			}else if (Integer.parseInt(operation) == 4) {
 				if (ndOperand == 0) {
-					System.out.println("Can not divide by zero");
+					System.out.println("Erro!! Cannot divide by zero");
 				}else 
 					System.out.println("Final answer: "+Division.divide(stOperand, ndOperand));
 
