@@ -52,9 +52,11 @@ public class CodeAlongMenu {
 
 	public static boolean validate(String option) {
 		// boolean isOperator = false;
+		// Build a 
 		String regex = "[+-]?[0-9]+";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(option);
+		// return a boolean if the is a digit between 0 to 9
 		return matcher.find();
 	}
 
@@ -80,7 +82,7 @@ public class CodeAlongMenu {
      * @return an array of integer**/
 	public static int promptColumn() {
 		String col = prompt("Enter the number of the column you would like to view: ");
-		while (!validate(col) &&  Integer.parseInt(col) < 0 && Integer.parseInt(col) <  table.length -1 ) {
+		while (!validate(col) ||  Integer.parseInt(col) < 0 && Integer.parseInt(col) <  table.length -1 ) {
 			col = prompt("PLease Enter the number (0 t0 9) of the row you would like to view: ");;
 		}
 		return Integer.parseInt(col);

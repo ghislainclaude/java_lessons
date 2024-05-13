@@ -1,7 +1,7 @@
-public class CodeAlong1 {
+wupublic class CodeAlong1 {
 	public static void main(String[] args) {
 		count();
-		int max = 10;
+		int max = 15;
 		// populated 1d array of size of 25
 		int[] max_array = {
 						   69, 138, 207, 276, 345, 414, 
@@ -29,15 +29,15 @@ public class CodeAlong1 {
 		count(max_2d_array);
 	}
 
-	public static void count() {
+	/*public static void count() {
 		System.out.println("************************* Step One ***************************");
 		for (int i=0; i< 10; i++) {
 			System.out.print((i) + ", ");
 		}
-	}
+	}*/
 
 	/*** Step 2  ***/
-	/*public static void count() {
+	public static void count() {
 		System.out.println("************************* Step Two ***************************");
 		int i=0;
 		if (i< 10) {
@@ -46,7 +46,7 @@ public class CodeAlong1 {
 				i++;
 			}while (i< 10);
 		}
-	}*/
+	}
 
 	/*** Step 3 ***/
 	/*public static void count() {

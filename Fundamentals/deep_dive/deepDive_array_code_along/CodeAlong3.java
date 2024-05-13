@@ -5,7 +5,7 @@ public class CodeAlong3 {
 	public static int[][] table;
 	public static void main(String[] args ) {
 		// populated 2d array of size 10X10  
-		table = new  int[][]{
+			table = new  int[][]{
 					{    69,    138,   207,    276,   345,  414,    1104,    12,     24,    55  }, 
 					{   483,    552,   621,    690,   759,  828,     639,   721,     13,   8008 },
 					{   897,    966,  1035,   1104,  1173, 1932,     882,  365,     81,   7005 },
@@ -17,9 +17,9 @@ public class CodeAlong3 {
     				{   1587,  1656,   1725,  1794,  1863,  2070,   1149, 1196,   1244,  1283 },
     				{   1242,  1311,   1380,  1449,  1514,  2001,    929,   971,   1014,  1058 }
     			};
-    	printArray("row:", getRow(-1));
-    	printArray("column:", getColumn(5));
-    	System.out.println("Cell Value: " +  getCell(5, 5));
+    		printArray("row:", getRow(3));
+    		printArray("column:", getColumn(5));
+    		System.out.println("Cell Value: " +  getCell(-1, 5));
 	}
 	
 	/**
