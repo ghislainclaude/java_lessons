@@ -5,6 +5,6 @@ public class AsserTest2 {
         //Place your code here
         boolean condition;
         assert a > 0 && b > 10 : "accerped true condition";
-        System.out.println("Finished " + b );
+        System.out.println("Finished "+ a);
 	}
 }

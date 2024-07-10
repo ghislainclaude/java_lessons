@@ -59,12 +59,13 @@ public class UserDAO {
 
 	/****/
 	public static int FindRow(String email) {
-		int pointer_x = -1;
-		int pointer_y = -1;
+		int pointer_x = -1; // pointer to point at row in the 2d array
+		int pointer_y = -1; // pointer to point at the colum in the row
 		Outer_loop: for (int row = 0; row< user_db.length; row++) {
 			for (int col=0; col< user_db[row].length; col++) {
+				// check is email is in the 2d array 
 				if (email.equals(user_db[row][col])) {
-					pointer_x = row;
+					pointer_x = row; // give the position of the row where the email is found 
 					pointer_y = col;
 					break Outer_loop;
 				}
@@ -90,6 +91,9 @@ public class UserDAO {
 	/****/ 
 	public static void delete(String email) {
 		try {
+			if (FindRow(email) == -1) {
+				System.out.
+			}
 			String[][] newuser_db = new String[user_db.length -1][user_db[0].length];
 			for (int row = 0; row< user_db.length; row++) 
 				for (int col=0; col< user_db[row].length; col++) 
